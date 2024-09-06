@@ -4,9 +4,7 @@ import Board from './components/Board.vue'
 </script>
 
 <template>
-  <header>
-    
-  </header>
+ 
 
   <main>
     <div class="wrapper">

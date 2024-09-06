@@ -3,27 +3,46 @@
   const props = defineProps(['value','player','i','j'])
   const emit = defineEmits(['handleClick'])
   const state = ref(props.value);
+  function color( ){
+    console.log("here");
+    if(state.value=='x'){
+      return  { 'color': 'black'};
+    }else if(state.value=='o'){
+      return  { 'color': 'red'};
+    }
+  };
 
-  
   function clicked(event){
     emit('handleClick',props.i,props.j);
   }
-  
+
 </script>
 
 <template>
-  <div class="boardCase" @click="clicked">   
+  <div class="boardCase" @click="clicked" :style="color()" >   
     {{state}}
   </div>
 </template>
 
 <style scoped>
+
 .boardCase {
-  width: 80px;
-  height: 80px;
-  font-size: 130px;
-  line-height: 50px;
+  width: 25vw;
+  height: 25vw;
+  font-size: 40vw;
+  line-height: 15vw;
   padding-left: 10px;
 
+}
+
+@media screen  and (min-width: 800px) {
+  .boardCase {
+    width: 15vw;
+    height: 15vw;
+    line-height: 8vw;
+    font-size: 25vw;
+    padding-left: 1vw;
+
+}
 }
 </style>
