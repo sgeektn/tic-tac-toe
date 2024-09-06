@@ -19,11 +19,11 @@
 
 <style scoped>
 .boardCase {
-  width: 40px;
-  height: 40px;
-  font-size: 65px;
-  line-height: 30px;
-  padding-left: 5px;
+  width: 80px;
+  height: 80px;
+  font-size: 130px;
+  line-height: 50px;
+  padding-left: 10px;
 
 }
 </style>
