@@ -85,7 +85,7 @@
       res = check_diag(true);
     }
     if (end)
-    winner.value = "Player "+res+" Win";
+    winner.value = "Player "+res+" win";
   };
 
   function init_board(){
@@ -107,7 +107,7 @@
 
 <template>
   <div class="board">
-    <h1>Current Player: {{ player }}</h1> 
+    <h1>Current Player: {{ player }}</h1>
     <table class="boardTable" border="1">
       <tr v-for="(item, index) in board">
         <td v-for="(boardCase, i) in item"> 

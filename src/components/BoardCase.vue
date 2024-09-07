@@ -4,7 +4,6 @@
   const emit = defineEmits(['handleClick'])
   const state = ref(props.value);
   function color( ){
-    console.log("here");
     if(state.value=='x'){
       return  { 'color': 'black'};
     }else if(state.value=='o'){
@@ -37,8 +36,8 @@
 
 @media screen  and (min-width: 800px) {
   .boardCase {
-    width: 15vw;
-    height: 15vw;
+    width: 10vw;
+    height: 10vw;
     line-height: 8vw;
     font-size: 25vw;
     padding-left: 1vw;
